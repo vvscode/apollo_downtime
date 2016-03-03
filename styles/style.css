@@ -1,0 +1,95 @@
+* {
+  font-family: "proxima-nova", "Proxima Nova", "Helvetica Nueue", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.DowntimePage {
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.DowntimePage-Container {
+  display: flex;
+  align-items: center;
+  flex-basis: 100%;
+  height: 100%;
+}
+.DowntimePage-Container__infoBox {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items:center;
+  padding: 20px;
+}
+.info-wrap {
+  max-width: 550px;
+}
+.logo {
+  display: block;
+  max-width: 320px;
+  width: 100%;
+  height: 40px;
+  background: url('../images/collectrium_logo.png') left center no-repeat;
+  background-size: contain;
+  margin-bottom: 30px;
+}
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.DowntimePage-Container__imgBox {
+  flex-basis: 50%;
+  padding: 20px;
+}
+.img-wrap {
+  width: 100%;
+  height: 430px;
+  background: url('../images/warn-splash-big.png') left center no-repeat;
+  background-size: contain;
+}
+@media (max-width: 1024px) {
+  .DowntimePage-Container {
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .DowntimePage-Container__infoBox {
+    flex-basis: 100%;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  .DowntimePage-Container__imgBox {
+    flex-basis: 100%;
+  }
+  .img-wrap {
+    background: url('../images/warn-splash-big.png') center center no-repeat;
+    background-size: contain;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+  .logo {
+    background: url('../images/collectrium_logo@2x.png') left center no-repeat;
+    background-size: contain;
+  }
+  .img-wrap {
+    background: url('../images/warn-splash-big@2x.png') left center no-repeat;
+    background-size: contain;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px),
+only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px) {
+  .img-wrap {
+    background: url('../images/warn-splash-big@2x.png') center center no-repeat;
+    background-size: contain;
+  }
+}
